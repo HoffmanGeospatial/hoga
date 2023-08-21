@@ -16,19 +16,19 @@ module:
       target: static/files
     - source: ./node_modules/katex/dist/fonts
       target: static/fonts
-  # - path: github.com/hugo-toha/hugo-toha.github.io
-  #   disable: true
-  #   mounts:
-  #   - source: content
-  #     target: content
-  #   - source: layouts
-  #     target: layouts
-  #   - source: data
-  #     target: data
-  #   - source: assets
-  #     target: assets
-  #   - source: static
-  #     target: static
+  - path: github.com/hugo-toha/hugo-toha.github.io
+    disable: false
+    mounts:
+    - source: content
+      target: content
+    - source: layouts
+      target: layouts
+    - source: data
+      target: data
+    - source: assets
+      target: assets
+    - source: static
+      target: static
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
